@@ -1,0 +1,50 @@
+/* ========= Home page CSS ========= */
+body {
+	padding: 0;
+	margin: 0;
+}
+#thumbnail {
+	border-radius: 10px;
+}
+#channel_icon {
+	height: 40px;
+	border-radius: 50%;
+}
+.channel { 
+    float: left;
+    margin: 8px 0px 0px 0px;
+    position: absolute;
+}
+.title { 
+    float: left;
+    margin: 8px 1px 10px 6px;
+    padding-left: 45px;
+    color: #000;
+}
+.hold {
+	height: 290px;
+}
+img#logo {
+    height: 20px;
+}
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #FFFFFF !important;
+}
+.form-control {
+    width: 538px;
+    margin: auto;
+}
+form.d-flex {
+    margin: auto;
+}
+
+/* ========= Vide view page CSS ========= */
+
+
+iframe { 
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.playVideotitle {
+    margin-top: 10px;
+}
