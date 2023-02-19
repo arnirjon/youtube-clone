@@ -1,3 +1,11 @@
+<?php
+  include('connect.php');
+
+  $sql_youtubeData = "SELECT * FROM youtubedata";
+  $query_youtubeData = mysqli_query($con, $sql_youtubeData);
+
+  $data = mysqli_fetch_all($query_youtubeData, MYSQLI_ASSOC);
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,17 +22,18 @@
     <div class="container-fluid">
       <div style="padding: 30px;">
         <div class="row">
+          <?php foreach ($data as $row): ?>
           <div class="col-sm-9">
             <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/TRAN_PYJRjU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              <iframe src="<?php echo $row['video_link']; ?>" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="section">
-                    <h5 class="playVideotitle">Laughter Punch With An Action Hero Team| Ep 281 | The Kapil Sharma Show | New Full Episode</h5>
+                    <h5 class="playVideotitle"><?php echo $row['title']; ?></h5>
                   <div class="">
                     <div class='channel'>
-                      <img src="https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/63b7eb60281388dc474c2801_Screen%20Shot%202023-01-06%20at%205.18.06%20PM.png" class="img-fluid" id="channel_icon">
+                      <img src="<?php echo $row['channel_logo']; ?>" class="img-fluid" id="channel_icon">
                     </div>
                     <div class='title'>
                       <h6 class="channelName" title="Bachelor Point | Season 4 | EPISODE 77 | Kajal Arefin Ome | Dhruba Tv Drama Serial">SET India</h6>
@@ -84,26 +93,22 @@
               <p class="commentTxt">Laughter Punch With An Action Hero Team</p>
             </div>
 
+            <?php break; endforeach; ?>
 
 
           </div>
+
           <div class="col-sm-3">
+            <?php foreach ($data as $row): ?>
             <div class="sideHold">
               <div class="sideChannel">
-                <img src="https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2022/03/07/bachelor_point_.png" class="img-fluid" style="width: 166px;">
+                <img src="<?php echo $row['thubnail']; ?>" style="width: 166px;">
               </div>
               <div class="sideTitle">
-                <h6>Laughter Punch With An Action Hero Team| Ep 281 | The Kapil Sharma Show | New Full Episode</h6>
+                <h6><?php echo $row['title']; ?></h6>
               </div>
             </div>
-            <div class="hold">
-              <div class="sideChannel">
-                <img src="https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2022/03/07/bachelor_point_.png" class="img-fluid" style="width: 166px;">
-              </div>
-              <div class="sideTitle">
-                <h6>Laughter Punch With An Action Hero Team| Ep 281 | The Kapil Sharma Show | New Full Episode</h6>
-              </div>
-            </div>
+            <?php endforeach; ?>
           </div>
           </div>
         </div>
