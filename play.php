@@ -56,14 +56,36 @@
               <p>24 Comments</p>
               <div class="row">
                 <div class="col-2" style="width: 64px;">
-                  <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="img-fluid" id="commentLogo">
+                  <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector.png" class="img-fluid" id="commentLogo">
                 </div>
                 <div class="col-10">
                   <input type="text" name="comment" class="comment_input" placeholder="Add Comment">
                 </div>
               </div>
             </div>
-            <!-- Comment Section code write here -->
+
+            <br>
+            <div class="commentRead">
+              <div class="user-info">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="User Image">
+                <div class="user-details">
+                  <h6>John Doe <span class="commentDate">12 days ago</span></h6>
+                </div>
+              </div>
+              <p class="commentTxt">This is the comment</p>
+            </div>
+            <div class="commentRead">
+              <div class="user-info">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="User Image">
+                <div class="user-details">
+                  <h6>John Doe <span class="commentDate">12 days ago</span></h6>
+                </div>
+              </div>
+              <p class="commentTxt">Laughter Punch With An Action Hero Team</p>
+            </div>
+
+
+
           </div>
           <div class="col-sm-3">
             <div class="sideHold">
