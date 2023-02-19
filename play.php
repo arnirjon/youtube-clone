@@ -52,7 +52,18 @@
                 <button class="show-less">Show Less</button>
               </div>
             </div>
-            <!-- Comment Section code write here... -->
+            <div class="comment my-3">
+              <p>24 Comments</p>
+              <div class="row">
+                <div class="col-2" style="width: 64px;">
+                  <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="img-fluid" id="commentLogo">
+                </div>
+                <div class="col-10">
+                  <input type="text" name="comment" class="comment_input" placeholder="Add Comment">
+                </div>
+              </div>
+            </div>
+            <!-- Comment Section code write here -->
           </div>
           <div class="col-sm-3">
             <div class="sideHold">

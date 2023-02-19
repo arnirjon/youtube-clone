@@ -115,3 +115,23 @@ iframe {
   max-height: 4.5em;
   line-height: 1.5em;
 }
+#commentLogo {
+    height: 40px;
+    border-radius: 50%;
+}
+.comment_input {
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid lightslategray;
+}
+.comment_input:focus , .comment_input:focus {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid lightslategray;
+}
+.comment_input:focus {
+    outline:none;
+}
