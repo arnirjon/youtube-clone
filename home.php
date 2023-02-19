@@ -11,9 +11,10 @@
   <body>
 
     <div id="popup-box">
-      <h2>Welcome!</h2>
-      <p>Thank you for visiting our website.</p>
-      <button id="close-button">Close</button>
+      <img src="notice.png" class="img-fluid">
+      <p class="popup-text">You can upload video top of the navbar click upload button and fill the input box and upload your video</p>
+      <p class="popup-text" style="font-size: 30px;">Thak You!!!</p>
+      <button class="btn btn-dark" id="close-button">Close</button>
     </div>
 
 
@@ -102,7 +103,7 @@
 
     <script type="text/javascript">
       window.onload = function() {
-        if (localStorage.getItem("popupShown") == "true") {
+        if (localStorage.getItem("popupShown") !== "true") {
           document.getElementById("popup-box").style.display = "block";
           localStorage.setItem("popupShown", "true");
         }

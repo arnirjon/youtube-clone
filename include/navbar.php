@@ -12,7 +12,7 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
           <div class="upload">
-            <a href="#">Upload</a>
+            <a href="upload.php">Upload</a>
           </div>
         </div>
       </div>

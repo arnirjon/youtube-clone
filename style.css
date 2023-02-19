@@ -188,6 +188,7 @@ iframe {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 #popup-box h2 {
@@ -201,9 +202,7 @@ iframe {
 
 #close-button {
   display: block;
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  background-color: #007bff;
+  margin: auto;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -212,4 +211,15 @@ iframe {
 
 #close-button:hover {
   background-color: #0069d9;
+}
+.popup-text {
+    text-align: center;
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-dark-abstract-background-with-black-overlap-layers-picture-image_1168163.jpg');
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  background-position: center;
+    background-size: cover;
 }
