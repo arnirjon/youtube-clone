@@ -10,6 +10,13 @@
   </head>
   <body>
 
+    <div id="popup-box">
+      <h2>Welcome!</h2>
+      <p>Thank you for visiting our website.</p>
+      <button id="close-button">Close</button>
+    </div>
+
+
 
     <?php include('include/navbar.php'); ?>
   
@@ -92,6 +99,19 @@
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        if (localStorage.getItem("popupShown") == "true") {
+          document.getElementById("popup-box").style.display = "block";
+          localStorage.setItem("popupShown", "true");
+        }
+      };
+
+      document.getElementById("close-button").onclick = function() {
+        document.getElementById("popup-box").style.display = "none";
+      };
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
