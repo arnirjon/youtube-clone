@@ -1,10 +1,15 @@
 <?php
   include('connect.php');
 
+  $getid = $_GET['id'];
   $sql_youtubeData = "SELECT * FROM youtubedata";
   $query_youtubeData = mysqli_query($con, $sql_youtubeData);
-
   $data = mysqli_fetch_all($query_youtubeData, MYSQLI_ASSOC);
+
+  $sql_youtube = "SELECT * FROM youtubedata where id = $getid";
+  $query_youtube = mysqli_query($con, $sql_youtube);
+  $videoDetailsdata = mysqli_fetch_all($query_youtube, MYSQLI_ASSOC);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,8 +27,8 @@
     <div class="container-fluid">
       <div style="padding: 30px;">
         <div class="row">
-          <?php foreach ($data as $row): ?>
-          <div class="col-sm-9">
+          <?php foreach ($videoDetailsdata as $row): ?>
+          <div class="col-sm-8">
             <div class="video-container">
               <iframe src="<?php echo $row['video_link']; ?>" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -98,14 +103,17 @@
 
           </div>
 
-          <div class="col-sm-3">
+          <!-- Side video -->
+
+          <div class="col-sm-4">
             <?php foreach ($data as $row): ?>
             <div class="sideHold">
               <div class="sideChannel">
                 <img src="<?php echo $row['thubnail']; ?>" style="width: 166px;">
               </div>
               <div class="sideTitle">
-                <h6><?php echo $row['title']; ?></h6>
+                <h6 style="font-size: 14.5px;"><?php echo $row['title']; ?></h6>
+                <p class="sideVideotitle"><?php echo $row['channel_name']; ?></p>
               </div>
             </div>
             <?php endforeach; ?>

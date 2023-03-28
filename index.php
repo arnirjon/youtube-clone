@@ -47,7 +47,7 @@
                  <img src="<?php echo $channel_logo ?>" class="img-fluid" id="channel_icon">
                </div>
                <div class='title'>
-                 <h6 title="Bachelor Point | Season 4 | EPISODE 77 | Kajal Arefin Ome | Dhruba Tv Drama Serial"><?php echo $title ?></h6>
+                 <h6 title="<?php echo $title ?>"><?php echo $title ?></h6>
                </div>
               </div>
             </a>

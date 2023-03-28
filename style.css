@@ -5,6 +5,7 @@ body {
 }
 #thumbnail {
 	border-radius: 10px;
+    height: 178px;
 }
 #channel_icon {
 	height: 40px;
@@ -20,9 +21,19 @@ body {
     margin: 8px 1px 10px 6px;
     padding-left: 45px;
     color: #000;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .hold {
 	height: 290px;
+}
+.upload {
+
 }
 img#logo {
     height: 20px;
@@ -56,6 +67,12 @@ iframe {
     float: left;
     padding-left: 177px;
     color: #000;
+    font-family: "Roboto","Arial",sans-serif;  
+}
+.sideVideotitle {
+    color: lightslategray;
+    font-weight: 200;
+    font-size: 13px;
 }
 .sideHold {
     height: 110px;
