@@ -11,6 +11,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Youtube</title>
+    <link rel="icon" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0b185ee620.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,7 +19,7 @@
   <body>
 
     <div id="popup-box">
-      <img src="notice.png" class="img-fluid">
+      <img src="img/notice.png" class="img-fluid">
       <p class="popup-text">You can upload video top of the navbar click upload button and fill the input box and upload your video</p>
       <p class="popup-text" style="font-size: 30px;">Thak You!!!</p>
       <button class="btn btn-dark" id="close-button">Close</button>
