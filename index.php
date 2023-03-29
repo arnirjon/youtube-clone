@@ -41,7 +41,7 @@
         ?>
         <div class="col-sm-3">
           <div class="hold">
-            <a href="play.php?id=<?php echo $id ?>">
+            <a href="play.php?id=<?php echo $id ?>" style="text-decoration: none;">
               <img src="<?php echo $thubnail ?>" class="img-fluid" id="thumbnail">
               <div>
                <div class='channel'>
@@ -49,6 +49,10 @@
                </div>
                <div class='title'>
                  <h6 title="<?php echo $title ?>"><?php echo $title ?></h6>
+               </div>
+               <div style="margin-left: 49px;">
+                 <p style="margin: 0; font-size: 14px; color: #606060; font-family: 'Roboto','Arial',sans-serif;"><?php echo $channel_name ?></p>
+                 <p style="margin: 0; font-size: 14px; color: #606060; font-family: 'Roboto','Arial',sans-serif;">5.4k Views</p>
                </div>
               </div>
             </a>
