@@ -60,10 +60,10 @@
             <div class="description">
               <div class="description">
                 <div class="short-text" id="truncate">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  <?php echo $row['description']; ?>
                 </div>
                 <div class="long-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  <?php echo $row['description']; ?>
                 </div>
                 <button class="show-more">Show More</button>
                 <button class="show-less">Show Less</button>
@@ -111,13 +111,15 @@
           <div class="col-sm-4">
             <?php foreach ($data as $row): ?>
             <div class="sideHold">
-              <div class="sideChannel">
+              <a href="play.php?id=<?php echo $row['id']; ?>">
+                <div class="sideChannel">
                 <img src="<?php echo $row['thubnail']; ?>" style="width: 166px;">
               </div>
               <div class="sideTitle">
                 <h6 style="font-size: 14.5px;"><?php echo $row['title']; ?></h6>
                 <p class="sideVideotitle"><?php echo $row['channel_name']; ?></p>
               </div>
+              </a>
             </div>
             <?php endforeach; ?>
           </div>

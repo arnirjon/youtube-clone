@@ -17,7 +17,12 @@
     $query = mysqli_query($con, $sql);
 
     if($query) {
-      echo "Video upload successfully";
+      ?>
+        <script language="javascript" type="text/javascript">
+          alert('Add Contact info Successfully');
+          window.location = 'index.php';
+        </script>
+      <?php
     }
     else {
       echo $sql;
